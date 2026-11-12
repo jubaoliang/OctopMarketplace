@@ -1,0 +1,133 @@
+{
+  "id": "lefu-health-support",
+  "version": "0.3.1",
+  "scene": "healthcare",
+  "label": {
+    "zh": "乐福健康专家",
+    "en": "Lefu Health Expert"
+  },
+  "description": {
+    "zh": "你的日常健康管理 AI 助手。从称呼、身高、体重和健康目标开始，建立可随时更新的个人健康档案；结合你的生活习惯，帮助理解健康信息、选择饮食与活动方案、关注睡眠、整理身体数据，并把目标拆成可执行的小行动，持续复盘调整。资料按需提供，经确认后保存，建议注明依据与适用范围；不替代医生诊断与治疗。",
+    "en": "Your AI companion for everyday health management. Build an optional, editable profile with your preferred name, height, weight and goals. Understand health information, explore practical food and activity choices, reflect on sleep, review body measurements and turn goals into small actions with ongoing reviews. Details are saved with your confirmation, and guidance explains its evidence and limits. Not a substitute for medical diagnosis or treatment."
+  },
+  "welcome_message": {
+    "zh": "你好，我是乐福健康专家，你的日常健康管理 AI 助手。我们可以先从一份简单的健康档案开始：怎么称呼你？身高和最近的体重是多少（请带单位）？你也可以跳过，直接告诉我想改善的健康问题。资料经你确认后才保存。",
+    "en": "Hello, I am Lefu Health Expert, your AI companion for everyday health. What should I call you, and what are your height and recent weight (with units)? You can skip these questions and tell me what you would like help with. I will save details only with your confirmation."
+  },
+  "icon_name": "heart",
+  "color": "#0f766e",
+  "prompt_files": [
+    "AGENTS.md",
+    "BOOTSTRAP.md"
+  ],
+  "quick_prompts": [
+    {
+      "title": {
+        "zh": "理解一个问题",
+        "en": "Understand a question"
+      },
+      "description": {
+        "zh": "解释概念，按需核对来源",
+        "en": "Explain a concept with relevant evidence"
+      },
+      "prompt": {
+        "zh": "我想了解一个健康问题，请先回答我当前的疑问，不必先登记资料：",
+        "en": "I have a health question. Please address this question without requiring registration:"
+      },
+      "icon_name": "book-open",
+      "color": "#e8f4ff"
+    },
+    {
+      "title": {
+        "zh": "今晚怎么选",
+        "en": "Choose a meal"
+      },
+      "description": {
+        "zh": "根据现有选择讨论替代",
+        "en": "Work with the available choices"
+      },
+      "prompt": {
+        "zh": "我想根据今晚能买到或吃到的食物，选一个现实可行的搭配，不需要精确算热量。",
+        "en": "Help me choose a practical meal from the food available tonight, without estimating exact calories."
+      },
+      "icon_name": "utensils",
+      "color": "#fff7ed"
+    },
+    {
+      "title": {
+        "zh": "从小活动开始",
+        "en": "Start with movement"
+      },
+      "description": {
+        "zh": "先看现实条件和相关限制",
+        "en": "Consider practical conditions and relevant limits"
+      },
+      "prompt": {
+        "zh": "我想从容易坚持的活动开始，请只问会影响这一步的必要问题，再给我可选行动。",
+        "en": "Help me choose an achievable activity. Ask only what matters for this next step."
+      },
+      "icon_name": "activity",
+      "color": "#ecfdf5"
+    },
+    {
+      "title": {
+        "zh": "整理我的记录",
+        "en": "Review my records"
+      },
+      "description": {
+        "zh": "核对单位、日期和可比性",
+        "en": "Check units, dates and comparability"
+      },
+      "prompt": {
+        "zh": "我会提供体重记录。请先核对日期、单位和测量条件，再整理数值变化；不要据此自动让我少吃或加练。",
+        "en": "I will provide weight records. Check dates, units and conditions before summarizing changes; do not automatically restrict food or increase exercise."
+      },
+      "icon_name": "bar-chart-3",
+      "color": "#eef2ff"
+    },
+    {
+      "title": {
+        "zh": "复盘一项行动",
+        "en": "Review an action"
+      },
+      "description": {
+        "zh": "保留有效部分，讨论一个调整",
+        "en": "Keep what works and discuss one change"
+      },
+      "prompt": {
+        "zh": "我想复盘之前选的一项行动。请根据我的实际反馈继续；没读到旧计划就告诉我，不要猜。",
+        "en": "Review an action using my actual feedback. If the earlier plan is unavailable, tell me rather than guessing."
+      },
+      "icon_name": "list-checks",
+      "color": "#f0fdfa"
+    },
+    {
+      "title": {
+        "zh": "生成行动卡",
+        "en": "Create an action card"
+      },
+      "description": {
+        "zh": "先在对话里给我，不自动保存",
+        "en": "Show a card here without saving automatically"
+      },
+      "prompt": {
+        "zh": "请把本次我明确选定的行动整理成简短卡片，区分已确认与待确认。先只在对话中给我，不自动保存或创建提醒。",
+        "en": "Summarize my selected actions in a short card, separating confirmed and proposed items. Show it here without saving or scheduling."
+      },
+      "icon_name": "file-text",
+      "color": "#fdf4ff"
+    }
+  ],
+  "task_examples": {
+    "zh": [
+      "仅本次：整理我主动提供的体重记录，核对日期、单位和缺失，不自动保存。",
+      "仅本次：把我已确认的行动整理成卡片，先在对话中给我。",
+      "仅本次：根据我提供的执行体验复盘，不假设没有记录就没做。"
+    ],
+    "en": [
+      "One time: organize the weight records I provide; check dates, units and gaps without saving automatically.",
+      "One time: show an action card for the actions I confirmed, in this conversation.",
+      "One time: review the feedback I provide without assuming that missing records mean no action."
+    ]
+  }
+}

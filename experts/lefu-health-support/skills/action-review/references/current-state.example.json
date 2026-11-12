@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "subject": "self",
+  "updated_at": "2026-11-06T10:00:00+08:00",
+  "goal": "虚构示例：让工作日晚餐选择更容易",
+  "constraints": [
+    {"text": "虚构示例：下班较晚，主要在食堂吃", "source": "user_report", "as_of": "2026-11-06"}
+  ],
+  "actions": [
+    {
+      "id": "a1",
+      "text": "虚构示例：下次到食堂时先看看有哪些可选搭配，再选择自己愿意尝试的一种",
+      "status": "proposed",
+      "confirmed_at": null,
+      "observation": "选择是否方便，是否喜欢，是否愿意再试",
+      "review_on": null,
+      "reason": "仅展示结构，尚无真实用户确认"
+    }
+  ],
+  "unknowns": ["虚构示例：用户是否愿意尝试该行动"]
+}

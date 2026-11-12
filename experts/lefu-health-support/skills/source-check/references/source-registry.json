@@ -1,0 +1,250 @@
+{
+  "schema_version": 2,
+  "prepared_at": "2026-11-11",
+  "scope": "selected_sections_reviewed_not_a_clinically_reviewed_corpus",
+  "entries": [
+    {
+      "id": "cn-dietary-2022",
+      "topic": "nutrition",
+      "document_role": "official_guidance",
+      "title": "中国居民膳食指南（2022）及公众版",
+      "issuer": "中国营养学会",
+      "version_hint": "2022",
+      "canonical_url": "https://www.cnsoc.org/bookpublica/0522202019.html",
+      "verification_status": "selected_sections_reviewed",
+      "notes": "取代英文目录入口；本轮实际读取正文。",
+      "supported_claims": [
+        "饮食搭配重视多样性，结合蔬果、全谷物等食物组。",
+        "规律进餐、减少含糖饮料；选择包装食品时阅读标签。"
+      ],
+      "section_or_page": "平衡膳食八准则：准则一、三、五、六、七",
+      "checked_at": "2026-11-11",
+      "limitations": "这是官方核心推荐摘录，不是完整指南；不直接外推到疾病膳食或个人定量处方。"
+    },
+    {
+      "id": "cn-weight-management-2024",
+      "topic": "weight",
+      "document_role": "official_guidance",
+      "title": "体重管理指导原则（2024年版）",
+      "issuer": "国家卫生健康委",
+      "version_hint": "2024",
+      "canonical_url": "https://www.nhc.gov.cn/wjw/c100378/202412/f3f58b54fbeb4c87b14164fac898bf08.shtml",
+      "verification_status": "candidate_requires_claim_level_fulltext_check",
+      "notes": "已定位官方通知及附件线索；未审阅完整附件，不引用其中的个体干预数值。",
+      "supported_claims": [],
+      "section_or_page": null,
+      "checked_at": null,
+      "limitations": "需核对适用对象与实际正文；不能只凭机构名采用结论。"
+    },
+    {
+      "id": "cn-obesity-diet-2024",
+      "topic": "nutrition",
+      "document_role": "official_guidance",
+      "title": "成人肥胖食养指南（2024年版）",
+      "issuer": "国家卫生健康委；中国疾控中心提供入口",
+      "version_hint": "2024",
+      "canonical_url": "https://www.chinacdc.cn/jkyj/yyyjk2/jswj13949/202504/t20250407_305767.html",
+      "verification_status": "candidate_requires_claim_level_fulltext_check",
+      "notes": "先核对适用范围与原文附件，不泛化给所有人。",
+      "supported_claims": [],
+      "section_or_page": null,
+      "checked_at": null,
+      "limitations": "需核对适用对象与实际正文；不能只凭机构名采用结论。"
+    },
+    {
+      "id": "who-activity-2020",
+      "topic": "movement",
+      "document_role": "official_guidance",
+      "title": "WHO guidelines on physical activity and sedentary behaviour",
+      "issuer": "WHO",
+      "version_hint": "2020",
+      "canonical_url": "https://www.who.int/publications/i/item/9789240015128",
+      "verification_status": "candidate_requires_claim_level_fulltext_check",
+      "notes": "发布页已定位；使用具体推荐前读取相应人群正文。",
+      "supported_claims": [],
+      "section_or_page": null,
+      "checked_at": null,
+      "limitations": "需核对适用对象与实际正文；不能只凭机构名采用结论。"
+    },
+    {
+      "id": "nice-behaviour-ph49",
+      "topic": "behavior",
+      "document_role": "official_guidance",
+      "title": "Behaviour change: individual approaches",
+      "issuer": "NICE",
+      "version_hint": "PH49",
+      "canonical_url": "https://www.nice.org.uk/Guidance/PH49/chapter/recommendations",
+      "verification_status": "access_blocked",
+      "notes": "官方推荐页本轮返回403；保留检索入口，不标为已核验。",
+      "supported_claims": [],
+      "section_or_page": null,
+      "checked_at": "2026-11-11",
+      "limitations": "需核对适用对象与实际正文；不能只凭机构名采用结论。"
+    },
+    {
+      "id": "nice-weight-ng246",
+      "topic": "weight",
+      "document_role": "official_guidance",
+      "title": "Overweight and obesity management",
+      "issuer": "NICE",
+      "version_hint": "NG246",
+      "canonical_url": "https://www.nice.org.uk/guidance/ng246",
+      "verification_status": "candidate_requires_claim_level_fulltext_check",
+      "notes": "国际补充资料；不静默替代中国场景规范。",
+      "supported_claims": [],
+      "section_or_page": null,
+      "checked_at": null,
+      "limitations": "需核对适用对象与实际正文；不能只凭机构名采用结论。"
+    },
+    {
+      "id": "cochrane-evidence",
+      "topic": "evidence",
+      "document_role": "evidence_discovery",
+      "title": "Cochrane evidence and plain language summaries",
+      "issuer": "Cochrane",
+      "version_hint": null,
+      "canonical_url": "https://www.cochrane.org/evidence",
+      "verification_status": "candidate_requires_claim_level_fulltext_check",
+      "notes": "这是检索入口，需定位具体综述、检索日期、证据确定性与适用人群。",
+      "supported_claims": [],
+      "section_or_page": null,
+      "checked_at": null,
+      "limitations": "需核对适用对象与实际正文；不能只凭机构名采用结论。"
+    },
+    {
+      "id": "who-activity-facts",
+      "topic": "movement",
+      "document_role": "public_health_education",
+      "title": "Physical activity",
+      "issuer": "WHO",
+      "version_hint": "2026-11-04",
+      "canonical_url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "verification_status": "selected_sections_reviewed",
+      "checked_at": "2026-11-11",
+      "section_or_page": "How much physical activity is recommended?",
+      "supported_claims": [
+        "活动不限于健身训练；生活、通勤中的活动也计入。",
+        "一般人群教育强调减少久坐、从可行活动开始。"
+      ],
+      "limitations": "公众概览不是个人起步处方；具体人群和数值要回到相应指南。"
+    },
+    {
+      "id": "cdc-sleep",
+      "topic": "sleep",
+      "document_role": "public_health_education",
+      "title": "About Sleep",
+      "issuer": "CDC",
+      "version_hint": "2024-05-15",
+      "canonical_url": "https://www.cdc.gov/sleep/about/index.html",
+      "verification_status": "selected_sections_reviewed",
+      "checked_at": "2026-11-11",
+      "section_or_page": "Sleep quality; Management; Keeping a sleep diary",
+      "supported_claims": [
+        "睡眠时长与睡眠质量需要分别了解。",
+        "反复睡眠困难可寻求专业帮助，睡眠日记可帮助描述情况。"
+      ],
+      "limitations": "美国公众教育资料；不能按一个夜晚或时长诊断失眠，不用于儿童睡眠处方。"
+    },
+    {
+      "id": "niddk-habit-change",
+      "topic": "behavior",
+      "document_role": "public_health_education",
+      "title": "Changing Your Habits for Better Health",
+      "issuer": "NIDDK / NIH",
+      "version_hint": null,
+      "canonical_url": "https://www.niddk.nih.gov/health-information/diet-nutrition/changing-habits-better-health",
+      "verification_status": "selected_sections_reviewed",
+      "checked_at": "2026-11-11",
+      "section_or_page": "Preparation; Action / Track your progress; Overcome roadblocks",
+      "supported_claims": [
+        "从具体、可行的小改变开始，讨论现实障碍。",
+        "复盘既关注做了什么，也关注体验；偶尔中断不等于失败。"
+      ],
+      "limitations": "行为支持公众材料；不采用文中的减重计算器或自动升级建议，不将阶段分类作为诊断。"
+    },
+    {
+      "id": "nhs-eating-disorders",
+      "topic": "safety",
+      "document_role": "public_health_education",
+      "title": "Overview – Eating disorders",
+      "issuer": "NHS",
+      "version_hint": null,
+      "canonical_url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/eating-disorders/overview/",
+      "verification_status": "selected_sections_reviewed",
+      "checked_at": "2026-11-11",
+      "section_or_page": "Check if you have an eating disorder; Getting help for an eating disorder",
+      "supported_claims": [
+        "过度限制、催吐或过量运动等线索值得专业评估。",
+        "对疑似进食问题提供支持并鼓励尽早求助。"
+      ],
+      "limitations": "症状清单不是诊断或筛查量表；英国就医路径需按用户所在地区调整。"
+    },
+    {
+      "id": "niddk-movement-safety",
+      "topic": "movement",
+      "document_role": "public_health_education",
+      "title": "Tips to Keep Moving",
+      "issuer": "NIDDK / NIH",
+      "version_hint": "2017-05",
+      "canonical_url": "https://www.niddk.nih.gov/health-information/weight-management/tips-get-active/tips-keep-moving",
+      "verification_status": "selected_sections_reviewed",
+      "checked_at": "2026-11-11",
+      "section_or_page": "Track your progress; Be safe",
+      "supported_claims": [
+        "记录活动类型、时间和体验，可用于回顾。",
+        "起步循序渐进；出现疼痛、头晕等不适时停止，已有伤病者咨询专业人员。"
+      ],
+      "limitations": "页面较旧，仅用于一般行为和停止原则；不能视为最新训练处方。"
+    },
+    {
+      "id": "who-healthy-diet",
+      "topic": "nutrition",
+      "document_role": "public_health_education",
+      "title": "Healthy diet",
+      "issuer": "WHO",
+      "version_hint": "2026-01-26",
+      "canonical_url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "verification_status": "selected_sections_reviewed",
+      "checked_at": "2026-11-11",
+      "section_or_page": "Key facts; Overview",
+      "supported_claims": [
+        "健康饮食需考虑充足、平衡、适度与多样性。",
+        "实际搭配受年龄、活动、文化与当地食物可获得性影响。"
+      ],
+      "limitations": "国际公众概览；中国场景优先核对国内建议，不把人群建议直接作为个人处方。"
+    },
+    {
+      "id": "cn-sleep-2025",
+      "topic": "sleep",
+      "document_role": "official_guidance",
+      "title": "睡眠健康核心信息及释义",
+      "issuer": "全国爱卫办 / 国家卫生健康委",
+      "canonical_url": "https://www.nhc.gov.cn/guihuaxxs/c100133/202503/70d5836afe804a858b899ee951a24a13.shtml",
+      "version_hint": "2025-03-18",
+      "verification_status": "access_blocked",
+      "checked_at": "2026-11-11",
+      "section_or_page": null,
+      "supported_claims": [],
+      "limitations": "本轮正文访问返回412，仅定位到发布入口；不得把搜索摘要当已审阅正文。"
+    }
+  ],
+  "pending_topics": [
+    {
+      "topic": "device_measurement",
+      "status": "needs_model_specific_manual_and_independent_validation"
+    },
+    {
+      "topic": "clinical_review",
+      "status": "not_completed"
+    },
+    {
+      "topic": "cn_sleep_fulltext",
+      "status": "official_page_access_blocked"
+    }
+  ],
+  "status_definitions": {
+    "selected_sections_reviewed": "已读取所列章节；只支持 supported_claims，不代表全文、最新性或临床审核通过。",
+    "candidate_requires_claim_level_fulltext_check": "保留入口；本轮未核验对应正文，不能据此提供具体建议。",
+    "access_blocked": "本轮访问受限；搜索摘要不能替代正文。"
+  }
+}
