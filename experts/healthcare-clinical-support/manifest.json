@@ -16,7 +16,7 @@
     "en": "I'll help you with AI-Assisted Diagnostic Reasoning."
   },
   "icon_name": "heart",
-  "icon_url": "https://cloudcache.tencent-cloud.com/qcloud/tea/app/skillhub/assets/source/ai-buddy-decouple/expert-profiles/healthcare-clinical-support.v20260625.avif",
+  "icon_url": "avatar.jpg",
   "color": "#dc2626",
   "prompt_files": [
     "SOUL.md"

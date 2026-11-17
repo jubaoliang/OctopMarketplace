@@ -15,7 +15,7 @@
     "en": "From code review to incident response — hand me your engineering workflows"
   },
   "icon_name": "cpu",
-  "icon_url": "/experts/avatars/scene-tech.svg",
+  "icon_url": "avatar.png",
   "color": "#2563eb",
   "prompt_files": [
     "SOUL.md",

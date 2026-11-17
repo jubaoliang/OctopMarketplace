@@ -16,6 +16,7 @@
     "en": "Send me your company's operating data (sales, expenses, inventory, receivables or budget) and tell me what you want to understand."
   },
   "icon_name": "candlestick-chart",
+  "icon_url": "avatar.png",
   "color": "#0F766E",
   "prompt_files": [
     "SOUL.md",

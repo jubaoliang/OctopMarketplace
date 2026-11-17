@@ -16,7 +16,7 @@
     "en": "I'll help you with Set the promotion calendar."
   },
   "icon_name": "globe",
-  "icon_url": "https://cloudcache.tencent-cloud.com/qcloud/tea/app/skillhub/assets/source/ai-buddy-decouple/expert-profiles/ecommerce-promotion-planning.v20260702.avif",
+  "icon_url": "avatar.jpg",
   "color": "#16a34a",
   "prompt_files": [
     "SOUL.md"

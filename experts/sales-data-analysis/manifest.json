@@ -16,6 +16,7 @@
     "en": "Send me your sales records (Excel or CSV) and tell me what you want to know. No clean-up needed; I will read the data first."
   },
   "icon_name": "bar-chart-3",
+  "icon_url": "avatar.png",
   "color": "#2563EB",
   "prompt_files": [
     "SOUL.md",

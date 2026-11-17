@@ -16,7 +16,7 @@
     "en": "I'll help you with Load history and factors."
   },
   "icon_name": "candlestick-chart",
-  "icon_url": "https://cloudcache.tencent-cloud.com/qcloud/tea/app/skillhub/assets/source/ai-buddy-decouple/expert-profiles/finance-quant-backtesting.v20260625.avif",
+  "icon_url": "avatar.jpg",
   "color": "#059669",
   "prompt_files": [
     "SOUL.md"

@@ -15,6 +15,7 @@
     "en": "Hello, I am Lefu Health Expert, your AI companion for everyday health. What should I call you, and what are your height and recent weight (with units)? You can skip these questions and tell me what you would like help with. I will save details only with your confirmation."
   },
   "icon_name": "heart",
+  "icon_url": "avatar.png",
   "color": "#0f766e",
   "prompt_files": [
     "AGENTS.md",

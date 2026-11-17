@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 .DS_Store
+.env
+coscli_output/
+*.log
+
+# Generated upload tree. Built by scripts/build-market.py.
+octop/market/

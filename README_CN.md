@@ -19,10 +19,17 @@ plugins/    每个插件一个目录（plugin.yaml + main.py）
 experts/<id>/
 ├── manifest.json    # id 与目录名一致；label、description 同时写 zh 和 en
 ├── SOUL.md
-├── avatar.svg       # 可选
+├── avatar.png       # 或 avatar.jpg
 └── skills/<name>/
     └── SKILL.md
 ```
+
+头像放在该专家自己的目录里，文件名用 `avatar.png` 或 `avatar.jpg`。`manifest.json` 如果有 `icon_url`，就写成同一个文件名。发布时会把这张图复制到专家 zip 旁边。
+
+- 尺寸 128×128。
+- 扁平插画用 PNG，照片风格的人像用 JPG。
+- 只接受 JPG 和 PNG。不要提交 SVG、AVIF、WebP，也不要写远程图片地址。
+- 不要放在 `assets/avatars/` 或 `.octop/`。
 
 ## 新增插件
 
@@ -46,3 +53,7 @@ plugins/<id>/
 5. 向 `main` 提 Pull Request，说明这个包做什么、你怎么验证过。
 
 评审会看目录是否符合上面的结构、描述是否和实际行为一致，以及改动是否只落在这个包里。
+
+## 发布
+
+合并到 `master` 或 `main` 后，工作流会生成 `octop/market/`，上传到 COS，再用 [PurgePathCache](https://cloud.tencent.com/document/product/228/37871) 刷新 CDN 目录。zip、图标和 `meta.json` 先上传，两个 `index.json` 最后上传。密钥写在 `.github/workflows/publish-market.yml` 的说明里。

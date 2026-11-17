@@ -19,10 +19,17 @@ There is no separate skill directory. A skill is the `skills/<name>/SKILL.md` pa
 experts/<id>/
 ├── manifest.json    # id matches the directory name; label and description in zh and en
 ├── SOUL.md
-├── avatar.svg       # optional
+├── avatar.png       # or avatar.jpg
 └── skills/<name>/
     └── SKILL.md
 ```
+
+Put the portrait in that expert directory and name it `avatar.png` or `avatar.jpg`. If `manifest.json` has `icon_url`, set it to that same filename. The publisher copies this file next to the expert zip.
+
+- Draw it at 128×128.
+- Use PNG for a flat illustration and JPG for a photo-like portrait.
+- JPG and PNG only. Do not commit SVG, AVIF, WebP, or a remote image URL.
+- Do not put the portrait in `assets/avatars/` or `.octop/`.
 
 ## Add a plugin
 
@@ -46,3 +53,7 @@ Pull requests are welcome. Experts, plugins, skills, translations, and fixes all
 5. Open a pull request against `main` and say what the package does and how you checked it.
 
 Review looks at whether the package matches the layout above, whether the description matches what it actually does, and whether the diff stays limited to that package.
+
+## Publish
+
+A merge into `master` or `main` builds `octop/market/`, uploads it to COS, then refreshes the CDN directories with [PurgePathCache](https://cloud.tencent.com/document/product/228/37871). Zip files, icons, and `meta.json` go up before the two `index.json` files. Secrets are listed in `.github/workflows/publish-market.yml`.
