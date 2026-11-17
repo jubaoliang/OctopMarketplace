@@ -1,0 +1,86 @@
+name: Publish market to COS
+
+# 合并进 master 或 main 之后，按 octop-market 的顺序更新 COS：
+# 先传 zip、图标和 meta.json，最后传两个 index.json。
+# 上传成功后调用 CDN PurgePathCache 刷新目录缓存。
+# https://cloud.tencent.com/document/product/228/37871
+#
+# 仓库 Secrets：
+#   COS_SECRET_ID
+#   COS_SECRET_KEY
+#   COS_BUCKET          桶全名，含 APPID
+#   COS_REGION          例如 ap-guangzhou
+#   CDN_PURGE_PATHS     逗号分隔的目录 URL，需以 / 结尾
+# 可选 Secrets：
+#   COS_ENDPOINT        默认 ${COS_BUCKET}.cos.${COS_REGION}.myqcloud.com
+#   COS_SESSION_TOKEN   临时密钥才需要
+#   CDN_SECRET_ID       不填则用 COS_SECRET_ID
+#   CDN_SECRET_KEY
+#   CDN_SESSION_TOKEN
+# 可选 Variables：
+#   CDN_FLUSH_TYPE      flush（默认）或 delete
+#   CDN_PURGE_AREA      mainland 或 overseas；不填则按域名加速区域刷新
+#
+# 子账号需要市场前缀的 COS 写权限，以及 cdn:PurgePathCache。
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-market
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Upload market and purge CDN
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install coscli
+        env:
+          COSCLI_VERSION: v1.0.9
+        run: |
+          set -euo pipefail
+          asset="coscli-${COSCLI_VERSION}-linux-amd64"
+          url="https://github.com/tencentyun/coscli/releases/download/${COSCLI_VERSION}/${asset}"
+          echo "Downloading ${url}"
+          curl -fsSL "$url" -o /tmp/coscli
+          expected="a07de5ba2800147a700ed29036b0c76a4229088cee68e1682d0eae19b638a915"
+          actual="$(sha256sum /tmp/coscli | awk '{print $1}')"
+          if [[ "$actual" != "$expected" ]]; then
+            echo "::error::coscli checksum mismatch: ${actual}"
+            exit 1
+          fi
+          mkdir -p "$HOME/.local/bin"
+          install -m 755 /tmp/coscli "$HOME/.local/bin/coscli"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Build market objects
+        run: python3 scripts/build-market.py
+
+      - name: Upload to COS and purge CDN
+        env:
+          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+          COS_BUCKET: ${{ secrets.COS_BUCKET }}
+          COS_REGION: ${{ secrets.COS_REGION }}
+          COS_ENDPOINT: ${{ secrets.COS_ENDPOINT }}
+          COS_SESSION_TOKEN: ${{ secrets.COS_SESSION_TOKEN }}
+          CDN_SECRET_ID: ${{ secrets.CDN_SECRET_ID }}
+          CDN_SECRET_KEY: ${{ secrets.CDN_SECRET_KEY }}
+          CDN_SESSION_TOKEN: ${{ secrets.CDN_SESSION_TOKEN }}
+          CDN_PURGE_PATHS: ${{ secrets.CDN_PURGE_PATHS }}
+          CDN_FLUSH_TYPE: ${{ vars.CDN_FLUSH_TYPE }}
+          CDN_PURGE_AREA: ${{ vars.CDN_PURGE_AREA }}
+        run: python3 scripts/upload-market.py

@@ -16,7 +16,7 @@
     "en": "I'll help you with Convert dates and open the almanac."
   },
   "icon_name": "sparkles",
-  "icon_url": "https://cloudcache.tencent-cloud.com/qcloud/tea/app/skillhub/assets/source/ai-buddy-decouple/expert-profiles/mysticism-lunar-almanac.v20260702.avif",
+  "icon_url": "avatar.jpg",
   "color": "#7c3aed",
   "prompt_files": [
     "SOUL.md"

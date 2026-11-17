@@ -16,7 +16,7 @@
     "en": "I'll help you with Compare prices globally."
   },
   "icon_name": "globe",
-  "icon_url": "/experts/avatars/scene-ecommerce.svg",
+  "icon_url": "avatar.png",
   "color": "#16a34a",
   "prompt_files": [
     "SOUL.md"

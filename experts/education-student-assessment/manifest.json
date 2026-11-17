@@ -16,7 +16,7 @@
     "en": "I'll help you with Assessment Plan and Rubric Design."
   },
   "icon_name": "book-open",
-  "icon_url": "https://cloudcache.tencent-cloud.com/qcloud/tea/app/skillhub/assets/source/ai-buddy-decouple/expert-profiles/education-student-assessment.v20260625.avif",
+  "icon_url": "avatar.jpg",
   "color": "#2563eb",
   "prompt_files": [
     "SOUL.md"

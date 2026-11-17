@@ -16,7 +16,7 @@
     "en": "I'll help you with Marketing Strategy and Audience Analysis."
   },
   "icon_name": "trending-up",
-  "icon_url": "/experts/avatars/scene-marketing.svg",
+  "icon_url": "avatar.png",
   "color": "#ca8a04",
   "prompt_files": [
     "SOUL.md"

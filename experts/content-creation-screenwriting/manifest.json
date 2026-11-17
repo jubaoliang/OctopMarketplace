@@ -16,7 +16,7 @@
     "en": "I'll help you with Project Setup and Script Type Confirmation (Process)."
   },
   "icon_name": "pen-tool",
-  "icon_url": "https://cloudcache.tencent-cloud.com/qcloud/tea/app/skillhub/assets/source/ai-buddy-decouple/expert-profiles/content-creation-screenwriting.v20260702.avif",
+  "icon_url": "avatar.jpg",
   "color": "#c026d3",
   "prompt_files": [
     "SOUL.md"
