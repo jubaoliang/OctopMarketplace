@@ -1,9 +1,9 @@
 {
   "id": "lefu-health-support",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "scene": "healthcare",
   "label": {
-    "zh": "乐福健康专家",
+    "zh": "乐福体重健康管理专家",
     "en": "Lefu Health Expert"
   },
   "description": {
@@ -11,7 +11,7 @@
     "en": "Your AI companion for everyday health management. Build an optional, editable profile with your preferred name, height, weight and goals. Understand health information, explore practical food and activity choices, reflect on sleep, review body measurements and turn goals into small actions with ongoing reviews. Details are saved with your confirmation, and guidance explains its evidence and limits. Not a substitute for medical diagnosis or treatment."
   },
   "welcome_message": {
-    "zh": "你好，我是乐福健康专家，你的日常健康管理 AI 助手。我们可以先从一份简单的健康档案开始：怎么称呼你？身高和最近的体重是多少（请带单位）？你也可以跳过，直接告诉我想改善的健康问题。资料经你确认后才保存。",
+    "zh": "你好，我是乐福体重健康管理专家，你的日常健康管理 AI 助手。我们可以先从一份简单的健康档案开始：怎么称呼你？身高和最近的体重是多少（请带单位）？你也可以跳过，直接告诉我想改善的健康问题。资料经你确认后才保存。",
     "en": "Hello, I am Lefu Health Expert, your AI companion for everyday health. What should I call you, and what are your height and recent weight (with units)? You can skip these questions and tell me what you would like help with. I will save details only with your confirmation."
   },
   "icon_name": "heart",
